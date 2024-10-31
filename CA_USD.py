@@ -68,7 +68,7 @@ def USDNews():
 
     #ذخیره نهایی در فایل تکست
     #--------------------------------------------------------------------------------
-    Radif += " @Monitor_market_developments"
+    Radif += " @Your Telegram Channel"
     while True:
             try:
                     check = str(browser.find_element(By.XPATH , '//*[@id="ctl00_ContentPlaceHolder1_ctl02_Repeater1_ctl01_th1"]/tr/th[1]').text)
@@ -89,9 +89,9 @@ def USDNews():
                     return(hh)
 
 
-bot = telegram.Bot(token="6419520940:AAHu0Ym7N6BJhITNPBklvBAOppTWHEUZjTc")
-##  Monitor_market_ID   = -1001646838549
+bot = telegram.Bot(token="Your token")
+##  ##  Channel ID   = -1000000000000
 Message =  USDNews() 
 async def send_message():
-    await bot.send_message(-1001646838549, text=Message)
+    await bot.send_message(-1000000000000, text=Message)
 asyncio.run(send_message())

@@ -52,7 +52,7 @@ def USDNews():
     today = datetime.date.today()
     tim = str(today) + '\n'
     Radif = '📣' +"اخبار مهم امروز USD "+"\n""\n"+tim+"\n""\n"
-    #خوانش ستونها و متغیر دادن به آنها
+
     i = 1
     while True:
             try:
@@ -90,7 +90,7 @@ def USDNews():
 
 
 bot = telegram.Bot(token="Your token")
-##  ##  Channel ID   = -1000000000000
+##  Channel ID   = -1000000000000
 Message =  USDNews() 
 async def send_message():
     await bot.send_message(-1000000000000, text=Message)
